@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: yellow;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: red;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #Header {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 0, 0.5);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: larger;
+            margin-bottom: 40px;
+        }
+
+        h1.Title {
+            color: black;
+            font-size: 36px;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+        }
+
+        .contenido {
+            font-size: 20px;
+            background-color: lime;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        p {
+            background-color: #00ff00;
+            color: blue;
+            border: 3px dotted purple;
+            padding: 10px;
+            text-align: left;
+        }
+
+        .box-model {
+            border: black;
+            padding: 20px;
+            margin: 30px;
+            background-color: pink;
+            text-align: center;
+        }
+
+        .table-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            margin: 20px;
+        }
+
+        .table-header,
+        .table-row {
+            display: flex;
+            width: 100%;
+        }
+
+        .table-header div,
+        .table-row div {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .table-header {
+            background-color: #f0f0f0;
+
+        }
+
+        .table-row:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="Header">
+        <h1 class="Title">Respuestas a Preguntas CSS y HTML</h1>
+    </div>
+
+    <div class="contenido">
+        <h2>Preguntas y Respuestas sobre CSS y HTML</h2>
+
+        <p>¿Qué es CSS?<br>
+            CSS significa "Cascading Style Sheets" y se utiliza para darle estilo a la pagina (bueno a sus elementos).
+        </p>
+
+        <p>¿Cuál es el propósito de CSS?<br>
+            El propósito de CSS es darle estilo visual a la página web como colores, tamaños, márgenes, etc.
+        </p>
+
+        <p>¿Cómo se aplica un CSS a un HTML?<br>
+            Tienes que crear un apartado "Style" donde iras aplicando diversos comandos que modificaran<br />
+            cada uno de los elementos.
+        </p>
+
+        <p>¿Qué es un selector?<br>
+            Un selector en CSS es lo que le dice al navegador qué elemento HTML debe ser estilizado.
+        </p>
+
+        <p>¿Qué es una regla CSS?<br>
+            Debe ser aplicado en un apartado "style>" ya sea en el mismo documento o en uno aparte
+        </p>
+
+        <p>¿Qué es un selector de tipo de etiqueta?<br>
+            Es un selector que selecciona todos los elementos de una etiqueta específica. Ejemplo: p aplica a todos los
+            párrafos.
+        </p>
+
+        <p>¿Qué es un selector de clase?<br>
+            Un selector de clase se aplica a todos los elementos que tienen una clase específica. Ejemplo: .miClase
+        </p>
+
+        <p>¿Qué es un selector de id?<br>
+            Un selector de id se aplica a un solo elemento con un id específico. Ejemplo: #miId
+        </p>
+
+        <p>¿Qué es el modelo de caja CSS?<br>
+            El modelo de caja define cómo se estructuran los elementos HTML. Incluye: contenido, relleno, borde y
+            margen.
+        </p>
+        <div class="box-model">Este es un ejemplo del modelo de caja</div>
+
+        <p>¿Cómo cambiar el color de la fuente con CSS?<br>
+            Se usa la propiedad color en CSS. Ejemplo: p { color: blue; }
+        </p>
+
+        <h2>HTML Básico</h2>
+
+        <p>¿Qué es HTML?<br>
+            HTML significa "HyperText Markup Language" y es el lenguaje usado para estructurar contenido en la web.
+        </p>
+
+        <p>¿Qué son las etiquetas
+
+            <head> y
+
+            <body>?<br>
+                La etiqueta
+
+                <head> contiene metadatos, y la etiqueta
+
+                <body> contiene
+                    el contenido visible de la página.
+        </p>
+
+        <p>¿Qué son las etiquetas
+            section, article,
+            aside, header, footer?<br>
+            Son etiquetas semánticas que estructuran el contenido: section es una sección general,
+            article es un contenido autónomo, aside es contenido adicional,
+            header es el encabezado, y footer es el pie de página.
+        </p>
+
+        <p>Crear una lista desordenada:<br>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+        </ul>
+        </p>
+
+        <p>Crear una lista ordenada:<br>
+        <ol>
+            <li> Elemento 1</li>
+            <li> Elemento 2</li>
+            <li> Elemento 3</li>
+        </ol>
+        </p>
+
+        <p>Crear una tabla básica:</p>
+        <div class="table-container">
+            <div class="table-header">
+                <div>Nombre</div>
+                <div>Edad</div>
+            </div>
+            <div class="table-row">
+                <div>Jaime</div>
+                <div>132</div>
+            </div>
+            <div class="table-row">
+                <div>JP</div>
+                <div>76</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
