@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 id="Titulo">Primeras 4 actividades con js</h1>
+
+</head>
+
+<body>
+    <button id="button">Haz clic para agregar un texto con addEventListener</button>
+
+
+
+    <script>
+        titulo = document.getElementById('Titulo');
+        titulo.style.textAlign = 'center';
+    </script>
+
+    <script id="Actividad 1">
+        let texto = document.createTextNode("Este es el parrafo agregado para la actividad 1");
+        let parrafo = document.createElement('p');
+        parrafo.appendChild(texto);
+        document.body.appendChild(parrafo);
+    </script>
+
+    <script id="Actividad 2">
+        Titulo.style.fontFamily = "cursive";
+        Titulo.style.color = "blue"
+    </script>
+
+    <script id="Actividad 3">
+        const boton = document.getElementById("button");
+        boton.addEventListener("click", function () {
+            const texto = document.createTextNode("Este parrafo fue creado con addEventListener ");
+            const parrafo = document.createElement("p");
+            parrafo.appendChild(texto);
+            document.body.appendChild(parrafo);
+
+            parrafo.style.fontFamily = "cursive";
+            parrafo.style.color = "blue";
+        });
+    </script>
+
+
+</body>
+
+</html>
