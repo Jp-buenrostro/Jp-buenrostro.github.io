@@ -1,0 +1,40 @@
+body {
+    background-color: black;
+}
+
+
+#encabezado {
+    color: white;
+    font-family: cursive;
+    text-decoration: overline;
+    text-shadow: 3px 5px 10px blue;
+    display: flex;
+    justify-content: center;
+}
+
+#texto {
+    color: aqua;
+    font-family: cursive;
+    font-size: x-large;
+    text-shadow: 3px 5px 10px blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+
+#IMAGEN {
+    margin-top: 1cm;
+    border: 25px;
+    border-style: double;
+    border-radius: 1000px;
+    border-color: rgb(91, 244, 96);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#IMAGEN img {
+    width: 400px;
+    height: 400px;
+}

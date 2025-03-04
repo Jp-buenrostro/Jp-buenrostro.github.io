@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="spotify.css">
+</head>
+
+<header id="encabezado">
+    <h1>Actividad: "Spotify for developers" </h1>
+</header>
+
+
+<body>
+    <div id="Imagen del álbum">
+        <div id="IMAGEN"></div>
+    </div>
+    <div id="texto">
+        <div id='Nombre de la cancion'>
+            <h3>Nombre de la canción: </h3>
+            <div id="nombre-cancion"></div>
+        </div>
+        <div id='Nombre del artista'>
+            <h3>Nombre del artista: </h3>
+            <div id="nombre-artista"></div>
+        </div>
+
+    </div>
+
+</body>
+<!-- Esto le dice a la página que cargue el archivo de JavaScript que se llama 
+spotify.js.Ese archivo es el que contiene las instrucciones para hacer cosas
+en la página web, como pedir información a Spotify. -->
+<script src="spotify.js"></script>
+
+<!-- Este fragmento de código dice que cuando se haga clic en el título "Click", 
+se debe ejecutar una función llamada getInfo (que está definida en el archivo 
+de JavaScript spotify.js). -->
+<script>
+    let e = document.getElementById("encabezado");
+    e.addEventListener("click", getInfo);
+</script>
+
+</html>
