@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donantes</title>
+</head>
+
+<body>
+    <h1>Lista de Donantes</h1>
+    <a href="/">Bienvenida</a>
+    <ul id="lista-donantes"></ul>
+
+    <script>
+        async function obtenerDonantes() {
+            const respuesta = await fetch("/api/donantes");
+            const datos = await respuesta.json();
+            const lista = document.getElementById("lista-donantes");
+
+            datos.donantes.forEach(donante => {
+                const item = document.createElement("li");
+                item.textContent = `${donante.nombre} - Tipo: ${donante.tipo_de_donante} - Aportación: $${donante.aportacion_anual}`;
+                lista.appendChild(item);
+            });
+        }
+        obtenerDonantes();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Equipo del Proyecto</title>
+</head>
+
+<body>
+    <h1>Conoce al equipo del proyecto</h1>
+    <a href="/">Bienvenida</a>
+    <ul id="lista-equipo"></ul>
+
+    <script>
+        async function obtenerEquipo() {
+            const respuesta = await fetch("/api/equipo");
+            const datos = await respuesta.json();
+            const lista = document.getElementById("lista-equipo");
+
+            datos.equipo.forEach(miembro => {
+                const item = document.createElement("li");
+                item.textContent = `${miembro.nombre} - ${miembro.rol}`;
+                lista.appendChild(item);
+            });
+        }
+        obtenerEquipo();
+    </script>
+</body>
+
+</html>

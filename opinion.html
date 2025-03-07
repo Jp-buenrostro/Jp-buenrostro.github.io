@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Opinion</title>
+</head>
+
+<body>
+    <h1>Opinion sobre el Colonialismo Digital</h1>
+    <p>Lee el siguiente articulo y responde la pregunta:</p>
+    <p><a href="https://www.aljazeera.com/opinions/2019/3/13/digital-colonialism-is-threatening-the-global-south"
+            target="_blank">Articulo sobre colonialismo digital</a></p>
+
+    <h2>Crees que el colonialismo digital es un riesgo para tu carrera profesional para tu vida personal</h2>
+    <p>Si, el colonialismo digital representa un peligro ya que restringe el progreso de algunas tecnologias y crea
+        dependencia de plataformas dominadas por grandes empresas. En el ambito laboral, puede limitar oportunidades al
+        establecer normas cerradas y monopolizar el acceso a la informacion y recursos esenciales. En mi opinion,
+        impacta en la privacidad y el control de mis datos personales, dejandolos en manos de companias que los
+        aprovechan sin transparencia ni regulacion apropiada.
+    <p>
+        <textarea id="opinion" rows="5" cols="50"></textarea>
+        <br>
+        <button onclick="enviarOpinion()">Enviar</button>
+
+        <script>
+            function enviarOpinion() {
+                const opinion = document.getElementById("opinion").value;
+                if (opinion.trim() === "") {
+                    alert("Por favor, escribe tu opinion.");
+                } else {
+                    alert("Gracias por compartir tu opinion.");
+                }
+            }
+        </script>
+
+        <br>
+        <a href="/">Volver a Bienvenida</a>
+</body>
+
+</html>
